@@ -1,0 +1,306 @@
+fileFormatVersion: 2
+guid: f0d0e9b07b6656040bba3b984e294b81
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: armL
+    100002: armR
+    100004: //RootNode
+    100006: beinL
+    100008: beinR
+    100010: body
+    100012: elbowL
+    100014: elbowR
+    100016: fingerL
+    100018: fingerL_Ziel
+    100020: fingerR
+    100022: fingerR_Ziel
+    100024: footL
+    100026: footR
+    100028: handL
+    100030: handR
+    100032: head
+    100034: head_2
+    100036: hipL
+    100038: hipR
+    100040: kneeL
+    100042: kneeR
+    100044: naut
+    100046: neck
+    100048: shoulderL
+    100050: shoulderR
+    100052: Skin
+    100054: Skin_2
+    100056: Skin_3
+    100058: Skin_4
+    100060: Skin_5
+    100062: toeL
+    100064: toeL_Ziel
+    100066: toeR
+    100068: toeR_Ziel
+    100070: CINEMA_4D_Editor
+    400000: armL
+    400002: armR
+    400004: //RootNode
+    400006: beinL
+    400008: beinR
+    400010: body
+    400012: elbowL
+    400014: elbowR
+    400016: fingerL
+    400018: fingerL_Ziel
+    400020: fingerR
+    400022: fingerR_Ziel
+    400024: footL
+    400026: footR
+    400028: handL
+    400030: handR
+    400032: head
+    400034: head_2
+    400036: hipL
+    400038: hipR
+    400040: kneeL
+    400042: kneeR
+    400044: naut
+    400046: neck
+    400048: shoulderL
+    400050: shoulderR
+    400052: Skin
+    400054: Skin_2
+    400056: Skin_3
+    400058: Skin_4
+    400060: Skin_5
+    400062: toeL
+    400064: toeL_Ziel
+    400066: toeR
+    400068: toeR_Ziel
+    400070: CINEMA_4D_Editor
+    2300000: body
+    2300002: armL
+    2300004: armR
+    2300006: beinL
+    2300008: beinR
+    2300010: head
+    3300000: body
+    3300002: armL
+    3300004: armR
+    3300006: beinL
+    3300008: beinR
+    3300010: head
+    4300000: body
+    4300002: head
+    4300004: armL
+    4300006: armR
+    4300008: beinL
+    4300010: beinR
+    7400000: C4D Animation Take
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: armL
+    13700002: armR
+    13700004: beinL
+    13700006: beinR
+    13700008: head
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: body
+    second: {fileID: 2100000, guid: 9ef56279cbe025c4db18bccf57110788, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: head
+    second: {fileID: 2100000, guid: 20ac74864beb26549b189d15adfd76e8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal
+    second: {fileID: 2100000, guid: f6316154300a3e14e9e36ffc245fade1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: schild
+    second: {fileID: 2100000, guid: 35281159d05925c489f09fa32bb7fc79, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: schnalle
+    second: {fileID: 2100000, guid: a33b9cba55f659a45baf49d4b5f352a6, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: C4D Animation Take
+      takeName: C4D Animation Take
+      firstFrame: 70
+      lastFrame: 100
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 1
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: fingerL_Ziel
+        weight: 1
+      - path: fingerR_Ziel
+        weight: 1
+      - path: naut
+        weight: 1
+      - path: naut/body
+        weight: 1
+      - path: naut/body/armL
+        weight: 1
+      - path: naut/body/armL/shoulderL
+        weight: 1
+      - path: naut/body/armL/shoulderL/elbowL
+        weight: 1
+      - path: naut/body/armL/shoulderL/elbowL/handL
+        weight: 1
+      - path: naut/body/armL/shoulderL/elbowL/handL/fingerL
+        weight: 1
+      - path: naut/body/armL/Skin_2
+        weight: 1
+      - path: naut/body/armR
+        weight: 1
+      - path: naut/body/armR/shoulderR
+        weight: 1
+      - path: naut/body/armR/shoulderR/elbowR
+        weight: 1
+      - path: naut/body/armR/shoulderR/elbowR/handR
+        weight: 1
+      - path: naut/body/armR/shoulderR/elbowR/handR/fingerR
+        weight: 1
+      - path: naut/body/armR/Skin_3
+        weight: 1
+      - path: naut/body/beinL
+        weight: 1
+      - path: naut/body/beinL/hipL
+        weight: 1
+      - path: naut/body/beinL/hipL/kneeL
+        weight: 1
+      - path: naut/body/beinL/hipL/kneeL/footL
+        weight: 1
+      - path: naut/body/beinL/hipL/kneeL/footL/toeL
+        weight: 1
+      - path: naut/body/beinL/Skin_4
+        weight: 1
+      - path: naut/body/beinR
+        weight: 1
+      - path: naut/body/beinR/hipR
+        weight: 1
+      - path: naut/body/beinR/hipR/kneeR
+        weight: 1
+      - path: naut/body/beinR/hipR/kneeR/footR
+        weight: 1
+      - path: naut/body/beinR/hipR/kneeR/footR/toeR
+        weight: 1
+      - path: naut/body/beinR/Skin_5
+        weight: 1
+      - path: naut/body/head
+        weight: 1
+      - path: naut/body/head/neck
+        weight: 1
+      - path: naut/body/head/neck/head_2
+        weight: 1
+      - path: naut/body/head/Skin
+        weight: 1
+      - path: toeL_Ziel
+        weight: 1
+      - path: toeR_Ziel
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
