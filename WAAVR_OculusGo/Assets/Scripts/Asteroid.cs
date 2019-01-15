@@ -6,39 +6,10 @@ using System.Collections.Generic;
 
 [RequireComponent(typeof(Collider))]
 
-public class Asteroid : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
+public class Asteroid : MonoBehaviour
 
 {
     private HashSet<PointerEventData> hovers = new HashSet<PointerEventData>();
-    
-    public void OnPointerEnter(PointerEventData eventData)
-    {
-        if (hovers.Add(eventData) && hovers.Count == 1)
-        {
-            FocusTarget();
-        }
-    }
-
-    public void OnPointerExit(PointerEventData eventData)
-    {
-        if (hovers.Remove(eventData) && hovers.Count == 0)
-        {
-            BlurTarget();
-        }
-    }
-
-    public void OnPointerClick(PointerEventData eventData)
-    {
-        // if (eventData.IsViveButton(ControllerButton.Trigger))
-        // {
-        //     // Vive button triggered!
-        //     LockTarget();
-        // }
-        // else if (eventData.button == PointerEventData.InputButton.Left)
-        // {
-        //     // Standalone button triggered!
-        // }
-    }
     
     GameManager MainScript;
     Gravity gravityScript;
@@ -83,7 +54,6 @@ public class Asteroid : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         else if (type == "special0") GetComponent<AudioSource>().PlayOneShot(newSpecial);
         else if (type == "special1") GetComponent<AudioSource>().PlayOneShot(newSpecial);
         else if (type == "special2") GetComponent<AudioSource>().PlayOneShot(newSpecial);
-
 
     }
 
