@@ -26,7 +26,9 @@ public class MyControllerScript : MonoBehaviour
 
         if (OVRInput.Get(OVRInput.Button.One))
         {
-           
+           MainScript.LoadSmartBomb();
+        } else {
+            MainScript.StopLoadingSmartBomb();
         }
     }
 
@@ -63,10 +65,10 @@ public class MyControllerScript : MonoBehaviour
                 if (AsteroidScript == null) {
                     AsteroidScript = currentGameObject.GetComponent<Asteroid>();
                     AsteroidScript.FocusTarget();
-
-                    if (OVRInput.GetDown(OVRInput.Button.One) || OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger)) 
-                    currentGameObject.GetComponent<Asteroid>().LockTarget();
                 }
+
+                if (OVRInput.GetDown(OVRInput.Button.One) || OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger)) 
+                    AsteroidScript.LockTarget();
             }
         }
         else

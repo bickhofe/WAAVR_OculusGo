@@ -113,8 +113,8 @@ public class GameManager : MonoBehaviour
             if (!Title.activeSelf) Title.SetActive(true);
             if (Status.activeSelf) Status.SetActive(false);
 
-            if (Input.GetMouseButtonDown(0)) StartGame();
-            if (Input.GetMouseButtonDown(1)) ResetScores();
+            //if (Input.GetMouseButtonDown(0)) StartGame();
+            //if (Input.GetMouseButtonDown(1)) ResetScores();
         }
 
         if (gameState == "Game")
@@ -127,28 +127,6 @@ public class GameManager : MonoBehaviour
 
             //show Smartbomb info
             if (SmartBomb) if (!SmartBombText.activeSelf) SmartBombText.SetActive(true);
-            
-            // // button pressed
-            // for (uint i = 0; i < 2; i++)
-            // {
-            //     foreach (WVR_InputId buttonId in buttonIds)
-            //     {
-            //         // button down (once)
-            //         // if (WaveVR_Controller.Input (device).GetPressDown (buttonId))
-
-            //         // button up
-            //         if (WaveVR_Controller.Input (device).GetPressUp (buttonId))
-            //         { 
-            //             if (buttonId == WVR_InputId.WVR_InputId_Alias1_Touchpad) StopLoadingSmartBomb();
-            //         }
-
-            //         // button pressed
-            //         if (WaveVR_Controller.Input (device).GetPress (buttonId))
-            //         {
-            //             if (buttonId == WVR_InputId.WVR_InputId_Alias1_Touchpad) LoadSmartBomb();                        
-            //         }
-            //     }
-            // }
 
             //faster goodies when ammo is low
             if (Ammo < 3) spawnTimeGoodie = 5;
@@ -193,7 +171,7 @@ public class GameManager : MonoBehaviour
                 hitTimeCount = 0;
                 hitCount = 0;
                 easy = med = hard = false;
-                print("ende");
+                //print("ende");
             }
 
             // Game over
@@ -213,7 +191,7 @@ public class GameManager : MonoBehaviour
             if (SmartLoad == 0) SoundScript.audioTimer.Play();
             SmartLoad += Time.deltaTime;
 
-            if (SmartLoad >= 5f) FireSmartBomb();
+            if (SmartLoad >= 3f) FireSmartBomb();
         }
     }
 
