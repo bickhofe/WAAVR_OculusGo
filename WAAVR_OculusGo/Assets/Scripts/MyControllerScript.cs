@@ -8,6 +8,7 @@ public class MyControllerScript : MonoBehaviour
     public GameManager MainScript;
     public Transform Pointer;
     GameObject currentGameObject;
+    Asteroid AsteroidScript;
 
     // Use this for initialization
     void Update()
@@ -37,7 +38,7 @@ public class MyControllerScript : MonoBehaviour
         if (Physics.Raycast(transform.position, fwd, out hit))
         {
             currentGameObject = hit.transform.gameObject;
-
+            
             Pointer.gameObject.SetActive(true);
             Pointer.transform.position = hit.point;
             Pointer.transform.LookAt(hit.point + hit.normal);
@@ -59,20 +60,24 @@ public class MyControllerScript : MonoBehaviour
 
             if (hit.collider.tag == "Asteroid")
             {
-                currentGameObject.GetComponent<Asteroid>().FocusTarget();
-                
-                if (OVRInput.GetDown(OVRInput.Button.One) || OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger)) 
-                currentGameObject.GetComponent<Asteroid>().LockTarget();
+                if (AsteroidScript == null) {
+                    AsteroidScript = currentGameObject.GetComponent<Asteroid>();
+                    AsteroidScript.FocusTarget();
+
+                    if (OVRInput.GetDown(OVRInput.Button.One) || OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger)) 
+                    currentGameObject.GetComponent<Asteroid>().LockTarget();
+                }
             }
         }
         else
         {
             Pointer.gameObject.SetActive(false);
-            currentGameObject.GetComponent<Asteroid>().BlurTarget();
-
+            
             if (currentGameObject != null)
             {
+                currentGameObject.GetComponent<Asteroid>().BlurTarget();
                 currentGameObject = null;
+                AsteroidScript = null;
             }
         }
 
