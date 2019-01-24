@@ -177,7 +177,6 @@ public class GameManager : MonoBehaviour
             // Game over
             if (Energy <= 0)
             {
-                gameState = "Title";
                 GameOver();
             }
         }
@@ -303,6 +302,8 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
+        gameState = "Title";
+        
         //stop spawning asteroids
         CancelInvoke("CreateBigTarget");
         CancelInvoke("CreateGoodie");

@@ -12403,7 +12403,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 522296753
+  randomSeed: 2104531620
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -19962,6 +19962,7 @@ GameObject:
   - component: {fileID: 1774323180}
   - component: {fileID: 1774323183}
   - component: {fileID: 1774323184}
+  - component: {fileID: 1774323185}
   m_Layer: 0
   m_Name: Main
   m_TagString: Untagged
@@ -20426,6 +20427,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &1774323185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1774323177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b783d9fa5fe21ad47b1d49ba0ab728f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  debugMode: 0
+  quitOnFail: 1
 --- !u!1 &1776112232
 GameObject:
   m_ObjectHideFlags: 0
@@ -22448,7 +22462,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: -251941521
+  randomSeed: 394469687
   InitialModule:
     serializedVersion: 3
     enabled: 1

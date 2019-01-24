@@ -9,7 +9,7 @@ public class ForceReceiver : MonoBehaviour {
 	private Rocket rocketScript;
 	private Gravity gravityScript;
 
-	SoundFX SoundScript;
+	MySoundFX SoundScript;
 
 	void Start () {
 //		//mainScript = GameObject.Find("Asteroid").GetComponent<LockOnTarget>();
@@ -21,7 +21,7 @@ public class ForceReceiver : MonoBehaviour {
 //		rb.freezeRotation = true;
 
 		//sounds
-		SoundScript = GameObject.Find ("Astronaut").GetComponent<SoundFX>();
+		SoundScript = GameObject.Find ("Astronaut").GetComponent<MySoundFX>();
 	}
 
 	void FixedUpdate () {

@@ -17,7 +17,7 @@ public class LookMenue : MonoBehaviour {
 
 	Astronaut AstronautScript;
 	//LockOnTarget GameStateScript;
-	SoundFX SoundScript;
+	MySoundFX SoundScript;
 	bool playedOnce = false;
 	
 	void Start() {
@@ -29,7 +29,7 @@ public class LookMenue : MonoBehaviour {
 		ButtonTxt.text = textOutput;
 
 		//sounds
-		SoundScript = GameObject.Find ("Astronaut").GetComponent<SoundFX>();
+		SoundScript = GameObject.Find ("Astronaut").GetComponent<MySoundFX>();
 	}
 	
 	void Update() {
