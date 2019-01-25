@@ -11,10 +11,10 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: OVRPlatformToolSettings
   m_EditorClassIdentifier: Oculus.VR.Editor:Assets.Oculus.VR.Editor:OVRPlatformTool/OVRPlatformToolSettings
-  appID: 915463625198468
-  appToken: OCAf4rivZCOCUUboJYxMeZBxguA2FEcPee3uYt86VLoz2DpQAhJESPNgpKBzEs73KaOAzwpAsmZAMn4UxRcucN8W4GQNWvsAZD
-  releaseNote: Store feedbach fixed
-  releaseChannel: Release
+  appID: 
+  appToken: 
+  releaseNote: 
+  releaseChannel: Beta
   riftBuildDiretory: 
   riftBuildVersion: 
   riftLaunchFile: 
