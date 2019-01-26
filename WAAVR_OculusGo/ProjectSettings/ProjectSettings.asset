@@ -162,7 +162,7 @@ PlayerSettings:
     Android: com.bickhofe.waaoculusgo
     Standalone: com.oculus.UnitySample
   buildNumber: {}
-  AndroidBundleVersionCode: 2
+  AndroidBundleVersionCode: 3
   AndroidMinSdkVersion: 21
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 0
@@ -245,7 +245,7 @@ PlayerSettings:
   AndroidTargetDevice: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: L:/GoogleDrive/_cert/Universal_keystore/bickhofe.keystore
+  AndroidKeystoreName: D:/GDrive/_cert/Universal_keystore/bickhofe.keystore
   AndroidKeyaliasName: bickhofe
   AndroidTVCompatibility: 1
   AndroidIsGame: 1
