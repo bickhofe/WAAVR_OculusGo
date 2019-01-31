@@ -36,10 +36,14 @@ public class MyControllerScript : MonoBehaviour
         //     MainScript.StartGame();
         // }
 
-        if (OVRInput.Get(OVRInput.Button.Back)) // || Input.GetKeyDown(KeyCode.F12))
-        {
-            MainScript.GameOver();
-        } 
+        if (OVRInput.GetDown(OVRInput.Button.Back) || OVRInput.GetDown(OVRInput.Button.Two) || Input.GetKey(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Escape)) {
+            OVRManager.PlatformUIConfirmQuit();
+        }
+
+        // if (OVRInput.Get(OVRInput.Button.Back)) // || Input.GetKeyDown(KeyCode.F12))
+        // {
+        //     MainScript.GameOver();
+        // } 
     }
 
     void FixedUpdate()
@@ -57,17 +61,18 @@ public class MyControllerScript : MonoBehaviour
 
             if (hit.collider.tag == "BtnStart")
             {
-                if (OVRInput.GetDown(OVRInput.Button.One)) MainScript.StartGame();
+
+                if (OVRInput.GetDown(OVRInput.Button.One) || OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger)) MainScript.StartGame();
             }
 
             if (hit.collider.tag == "BtnReset")
             {
-                if (OVRInput.GetDown(OVRInput.Button.One)) MainScript.ResetScores();
+                if (OVRInput.GetDown(OVRInput.Button.One) || OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger)) MainScript.ResetScores();
             }
 
             if (hit.collider.tag == "BtnQuit")
             {
-                if (OVRInput.GetDown(OVRInput.Button.One)) MainScript.QuitGame();
+                if (OVRInput.GetDown(OVRInput.Button.One) || OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger)) MainScript.QuitGame();
             }
 
             if (hit.collider.tag == "Asteroid")

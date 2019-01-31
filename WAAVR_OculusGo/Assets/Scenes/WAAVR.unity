@@ -12403,7 +12403,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -658938639
+  randomSeed: 477697278
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -19963,7 +19963,6 @@ GameObject:
   - component: {fileID: 1774323183}
   - component: {fileID: 1774323184}
   - component: {fileID: 1774323185}
-  - component: {fileID: 1774323186}
   m_Layer: 0
   m_Name: Main
   m_TagString: Untagged
@@ -20441,18 +20440,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   debugMode: 0
   quitOnFail: 1
---- !u!114 &1774323186
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1774323177}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2afcf575f4a68de4db434c7b7233c451, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shortPressHandler: 0
 --- !u!1 &1776112232
 GameObject:
   m_ObjectHideFlags: 0
@@ -22475,7 +22462,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: 1373364363
+  randomSeed: 149109487
   InitialModule:
     serializedVersion: 3
     enabled: 1
